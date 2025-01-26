@@ -1,0 +1,32 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is a react application first phase of learning",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/challaakhil1/akhil-react.git"
+  },
+  "keywords": [],
+  "author": "Challa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/challaakhil1/akhil-react/issues"
+  },
+  "homepage": "https://github.com/challaakhil1/akhil-react#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
