@@ -1,11 +1,11 @@
-import { LOGO_URL } from '../utils/constants';
-import { useState } from 'react';
+import { LOGO_URL } from "../utils/constants";
+import { useState } from "react";
+import { Link } from "react-router";
 
 const Header = () => {
   //   let btnName = 'Login';
 
-  const [btnNameReact, setBtnNameReact] = useState('Login');
-  console.log('header render');
+  const [btnNameReact, setBtnNameReact] = useState("Login");
 
   return (
     <div className="header">
@@ -14,18 +14,23 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
           <li>Cart</li>
           <button
             className="loginBtn"
             onClick={() => {
               //   btnName = 'Logout';
-              btnNameReact === 'Login'
-                ? setBtnNameReact('Logout')
-                : setBtnNameReact('Login');
-              console.log(btnNameReact);
+              btnNameReact === "Login"
+                ? setBtnNameReact("Logout")
+                : setBtnNameReact("Login");
             }}
           >
             {btnNameReact}

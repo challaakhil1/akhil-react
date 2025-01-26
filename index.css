@@ -176,3 +176,8 @@
 .filter-btn:hover {
   background-color: #09a909;
 }
+
+.loginBtn {
+padding: 10px;
+display: flex;
+}
